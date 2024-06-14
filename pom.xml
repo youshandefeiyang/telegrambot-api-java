@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.youshandefeiyang</groupId>
-    <artifactId>telegrambot-api-java</artifactId>
-    <packaging>jar</packaging>
-    <version>1.2.0</version>
+    <groupId>top.feiyangdigital.tg</groupId>
+    <artifactId>Bots</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
 
     <modules>
         <module>telegrambots</module>
@@ -51,6 +51,10 @@
     </developers>
 
     <distributionManagement>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository> 
         <snapshotRepository>
             <id>ossrh</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots</url>
@@ -60,6 +64,13 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
         </repository>
     </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>     
 
     <properties>
         <java.version>11</java.version>
@@ -181,6 +192,11 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>com.github.difflib</groupId>
+                <artifactId>java-diff-utils</artifactId>
+                <version>4.9</version>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-site-plugin</artifactId>
