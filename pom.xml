@@ -7,7 +7,7 @@
     <groupId>top.feiyangdigital.tg</groupId>
     <artifactId>Bots</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0</version>
+    <version>1.4.0</version>
 
     <modules>
         <module>telegrambots</module>
